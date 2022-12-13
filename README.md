@@ -1,7 +1,16 @@
 # lint-todo-repro
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This Repo is a reproduction repo for https://github.com/ember-template-lint/ember-template-lint/issues/2377.
+
+This repo successfully reproduces the issue where ember-template-lint ignores `.lint-todo` when an absolute file path is given.
+
+To reproduce:
+
+* clone this repo
+* `npm install`
+* `npx ember-template-lint $(pwd)/app/components/foo.hbs`
+
+
 
 ## Prerequisites
 
